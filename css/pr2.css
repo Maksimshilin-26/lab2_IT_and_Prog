@@ -1,4 +1,4 @@
-/* Базовый сброс и блочная модель */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +12,6 @@ body {
     color: #333;
 }
 
-/* Шапка и навигация */
 .site-header {
     background-color: #1a1a2e;
     color: #fff;
@@ -47,7 +46,6 @@ body {
     color: #fff;
 }
 
-/* Основной контент */
 .content {
     max-width: 1200px;
     margin: 0 auto;
@@ -79,7 +77,6 @@ ul, ol {
     margin-bottom: 15px;
 }
 
-/* Карточки товаров (Grid) */
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 колонки по умолчанию */
@@ -121,7 +118,7 @@ ul, ol {
     margin-top: 10px;
 }
 
-/* Таблица */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -144,7 +141,6 @@ th {
     color: #dc2626;
 }
 
-/* Подвал */
 .site-footer {
     text-align: center;
     padding: 20px;
@@ -153,16 +149,14 @@ th {
     margin-top: 40px;
 }
 
-/* === АДАПТИВНОСТЬ (Медиазапросы) === */
 
-/* Планшеты: 2 колонки */
 @media (max-width: 900px) {
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Мобильные устройства: 1 колонка, вертикальное меню */
+
 @media (max-width: 600px) {
     .main-nav ul {
         flex-direction: column;
@@ -179,11 +173,11 @@ th {
     }
     
     table, thead, tbody, th, td, tr {
-        display: block; /* Таблица становится блоками на очень узких экранах */
+        display: block; 
     }
     
     th {
-        display: none; /* Скрываем заголовки таблицы на мобильных */
+        display: none; 
     }
     
     td {
